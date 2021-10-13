@@ -1,6 +1,6 @@
 # slalom-badge-pi
 
-A project to create a pi-based badge that slalom folk can wear and enjoy.
+A project to create a pi-based badge that Slalom folk can wear, experiment with and enjoy. Based on Kali linux.
 
 ## Hardware requirements
 
