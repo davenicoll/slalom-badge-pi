@@ -1,0 +1,3 @@
+builder/output-badge/*
+builder/packer_cache/*
+badge-raspbian-*
