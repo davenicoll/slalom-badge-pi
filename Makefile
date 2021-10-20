@@ -22,7 +22,7 @@ image:
 	cd builder && sudo /usr/bin/packer build -var "badge_hostname=$(BADGE_HOSTNAME)" -var "badge_version=$(BADGE_VERSION)" badge.json
 	sudo mv builder/output-badge/image badge-raspbian-lite-$(BADGE_VERSION).img
 	sudo sha256sum badge-raspbian-lite-$(BADGE_VERSION).img > badge-raspbian-lite-$(BADGE_VERSION).sha256
-	sudo zip badge-raspbian-lite-$(BADGE_VERSION).zip badge-raspbian-lite-$(BADGE_VERSION).sha256 badge-raspbian-lite-$(BADGE_VERSION).img
+	# sudo zip badge-raspbian-lite-$(BADGE_VERSION).zip badge-raspbian-lite-$(BADGE_VERSION).sha256 badge-raspbian-lite-$(BADGE_VERSION).img
 
 clean:
 	rm -rf /tmp/packer-builder-arm-image
