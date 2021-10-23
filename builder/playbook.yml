@@ -18,6 +18,7 @@
         - "dtparam=audio=off"
       modules:
         - "i2c-dev"
+        - "dwc2,g_ether"
     services:
       enable:
         # - dphys-swapfile.service
@@ -61,6 +62,8 @@
           - triggerhappy
           - wpa_supplicant
           - nfs-common
+          - pulseaudio
+          - pipewire
         install:
           - rsync
           - vim
@@ -72,6 +75,9 @@
           - python3-mpi4py
           - python3-smbus
           - python3-grpcio
+          - python3-numpy
+          - python3-pil
+          - python3-smbus          
           - unzip
           - gawk
           - figlet
@@ -80,6 +86,7 @@
           - libatlas-base-dev
           - tcpdump
           - lsof
+          - htop
           #- libilmbase23
           #- libopenexr23
           #- libgstreamer1.0-0
@@ -94,8 +101,6 @@
           - fonts-dejavu
           - fonts-dejavu-core
           - fonts-dejavu-extra
-          - python3-pil
-          - python3-smbus
           - libfuse-dev
           - bc
           - fonts-freefont-ttf
@@ -241,3 +246,13 @@
       enabled: no
     with_items: "{{ services.disable }}"
 
+  - name: install python package spidev
+    command: pip3 install RPi.GPIO spidev
+
+  - name: clone waveshare e-paper repository
+    git:
+      repo: https://github.com/waveshare/e-Paper
+      dest: /usr/local/src/e-Papers
+
+  - name: disable kali developer message when logging in
+    command: touch ~/.hushlogin
