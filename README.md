@@ -28,6 +28,6 @@ Once you're done, and have flashed the image to your pi, you may want some disk 
 make clean
 ```
 
-## SSH in to you pi
+## SSH to the pi
 
-Right now, you must connect your pi to your wifi to access it. In the future, we'll enable gadget mode (plug it in your computers USB port to connect to it). Once connected, the login credentials are **kali:kali**
+Right now, you must connect your pi to your wifi to access it. In the future, we'll enable gadget mode (plug it in your computers USB port to connect to it). Once it's connected to your wifi, find its IP address, and `ssh kali@<ip address` (**the password is kali**).
