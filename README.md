@@ -16,10 +16,13 @@ You'll need some disk space. Probably about 25GB. You'll also need a linux/macOS
 
 There's a `makefile` in the project root, to aid with installing dependencies, building an image, and removing unused files.
 
-Then...
+First, install the dependencies...
 ```bash
-make install # install dependencies
-make image # create an image that can be flashed to a pi
+make install
+```
+Then, make an image that can be flashed to an SD card...
+```bash
+make image
 ```
 
 Once you're done, and have flashed the image to your pi, you may want some disk space back...
