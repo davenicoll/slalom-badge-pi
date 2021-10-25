@@ -12,7 +12,7 @@ A project to create a pi-based badge that Slalom folk can wear, experiment with 
 
 ## Building an image
 
-You'll need some disk space. Probably about 25GB. You'll also need a linux/macOS environment.
+You'll need some disk space. Probably about 25GB. You'll also need a linux(~~/macOS~~ linux-only for the moment) environment.
 
 There's a `makefile` in the project root, to aid with installing dependencies, building an image, and removing unused files.
 
