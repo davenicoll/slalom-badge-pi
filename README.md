@@ -22,6 +22,12 @@ make install # install dependencies
 make image # create an image that can be flashed to a pi
 ```
 
+Once you're done, and have flashed the image to your pi, you may want some disk space back...
+
 ```bash
-make clean # if you'd like some disk space back :)
+make clean
 ```
+
+## SSH in to you pi
+
+Right now, you must connect your pi to your wifi to access it. In the future, we'll enable gadget mode (plug it in your computers USB port to connect to it). Once connected, the login credentials are **kali:kali**
