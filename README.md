@@ -1,10 +1,10 @@
 # slalom-badge-pi
 
-A project to create a pi-based badge that Slalom folk can wear, experiment with and enjoy. Based on Kali linux.
+A project to create a Raspberry Pi-based badge that Slalom folk can wear, experiment with and enjoy. Based on Kali linux.
 
 ## Hardware requirements
 
-- Raspberry Pi Zero W v1.1
+- Raspberry Pi Zero W v1.1 or v2.0
 - [Waveshare e-ink display HAT](https://www.pishop.ca/product/250x122-2-13inch-e-ink-display-hat-for-raspberry-pi/)
 - [16GB SD Card](https://www.amazon.ca/Sandisk-Ultra-Micro-UHS-I-Adapter/dp/B073K14CVB/ref=sr_1_9?dchild=1&keywords=16gb+sd+card&qid=1634089895&sr=8-9)
 - (Optional) [PiSugar battery](https://www.pisugar.com/) 

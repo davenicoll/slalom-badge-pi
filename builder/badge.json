@@ -5,7 +5,7 @@
       "type": "arm-image",
       "iso_url": "https://kali.download/arm-images/kali-2021.3/kali-linux-2021.3-rpi0w-nexmon-armel.img.xz",
       "iso_checksum": "93462d570e9db553e1c2a8728afe4913f153fb933c1134cc5cb585a80d65bde9",
-      "target_image_size": 12000000000
+      "target_image_size": 10500000000
     }
   ],
   "provisioners": [
@@ -27,6 +27,11 @@
       "type": "file",
       "source": "data/usr/bin/hdmioff",
       "destination": "/usr/bin/hdmioff"
+    },
+    {
+      "type": "file",
+      "source": "data/etc/motd",
+      "destination": "/etc/motd"
     },
     {
       "type": "shell",
