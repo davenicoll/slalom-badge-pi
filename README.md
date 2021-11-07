@@ -46,9 +46,9 @@ Right now, you must connect your pi to your wifi to access it. In the future, we
 
 ![screen_30_2](https://user-images.githubusercontent.com/690117/140634122-9948f6ce-9dfb-441e-8b1d-4a6f6a110f96.png)
 
-To view the available fonts in a variety of sizes and with emojis, run...
+To view the installed fonts on the RPi, run...
 ```bash
 cd badge
 go run main.go
 ```
-Output is only to .png files (in `badge/test-output`). Future versions will output directly to the e-ink display.
+`sudo raspi config` ... Interfacing Options ... SPI ... enable SPI and reboot, if run into a problem accessing SPI.

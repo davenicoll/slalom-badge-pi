@@ -14,6 +14,7 @@
         - "dtoverlay=spi1-3cs"
         - "dtparam=spi=on"
         - "dtparam=i2c_arm=on"
+        - "dtparam=i2c=on,spi=on"
         - "dtparam=i2c1=on"
         - "gpu_mem=16"
         - "disable_overscan=1"
@@ -264,6 +265,18 @@
       state: started
       enabled: yes
     with_items: "{{ services.enable }}"
+
+  - name: create spidev udev rule
+    copy:
+      dest: "/etc/udev/rules.d/90-gpio-spi.rules"
+      content: |
+        KERNEL=="spidev0.0", OWNER="root", GROUP="spi"
+        KERNEL=="spidev0.1", OWNER="root", GROUP="spi"
+
+  - name: create spi group and add kali to it
+    command: |
+      sudo groupadd -f --system spi
+      sudo usermod -a -G spi kali
 
   - name: install python package spidev
     command: pip3 install RPi.GPIO spidev
