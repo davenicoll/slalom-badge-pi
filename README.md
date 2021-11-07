@@ -44,7 +44,7 @@ Right now, you must connect your pi to your wifi to access it. In the future, we
 
 ## Running the font test
 
-![screen_30_2](https://user-images.githubusercontent.com/690117/140634122-9948f6ce-9dfb-441e-8b1d-4a6f6a110f96.png)
+![image](https://user-images.githubusercontent.com/690117/140653130-681a940f-82a6-4c57-8ddb-ea50b94c2191.png)
 
 To view the installed fonts on the RPi, run...
 ```bash
