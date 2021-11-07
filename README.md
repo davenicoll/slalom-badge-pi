@@ -1,4 +1,11 @@
-# slalom-badge-pi
+```
+     _       _                        _           _ _     _ 
+ ___| | __ _| | ___  _ __ ___        | |__  _   _(_) | __| |
+/ __| |/ _` | |/ _ \| '_ ` _ \       | '_ \| | | | | |/ _` |
+\__ \ | (_| | | (_) | | | | | |      | |_) | |_| | | | (_| |
+|___/_|\__,_|_|\___/|_| |_| |_|  ____|_.__/ \__,_|_|_|\__,_|
+                                |_____|  
+```
 
 A project to create a Raspberry Pi-based badge that Slalom folk can wear, experiment with and enjoy. Based on Kali linux.
 
@@ -34,3 +41,14 @@ make clean
 ## SSH to the pi
 
 Right now, you must connect your pi to your wifi to access it. In the future, we'll enable gadget mode (plug it in your computers USB port to connect to it). Once it's connected to your wifi, find its IP address, and `ssh kali@<ip address>` (**the password is kali**).
+
+## Running the font test
+
+![screen_30_2](https://user-images.githubusercontent.com/690117/140634122-9948f6ce-9dfb-441e-8b1d-4a6f6a110f96.png)
+
+To view the available fonts in a variety of sizes and with emojis, run...
+```bash
+cd badge
+go run main.go
+```
+Output is only to .png files (in `badge/test-output`). Future versions will output directly to the e-ink display.
