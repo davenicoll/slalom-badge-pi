@@ -51,4 +51,4 @@ To view the installed fonts on the RPi, run...
 cd badge
 go run main.go
 ```
-`sudo raspi config` ... Interfacing Options ... SPI ... enable SPI and reboot, if run into a problem accessing SPI.
+If you run into a problem accessing SPI, `sudo raspi config` ... Interfacing Options ... SPI ... enable SPI and reboot.
